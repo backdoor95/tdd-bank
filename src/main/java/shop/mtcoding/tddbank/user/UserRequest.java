@@ -6,6 +6,12 @@ import lombok.Setter;
 public class UserRequest {
 
     @Getter @Setter
+    public static class LoginDTO{
+        private String username;
+        private String password;
+    }
+
+    @Getter @Setter
     public static class JoinDTO{ // 강사님은 보통 내부클래스로 만든다고함.
         private String username;
         private String password;
